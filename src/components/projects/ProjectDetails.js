@@ -12,7 +12,7 @@ const ProjectDetails = (props) => {
                 </div>
                 <div className="card-action grey lighten-4 grey-text">
                     <div>Posted by Kayla Duffy</div>
-                    <div>Sep 1, 10am</div>
+                    <div>Sep 1, 2020 at 10am</div>
                 </div>
             </div>
         </div>

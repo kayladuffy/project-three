@@ -1,8 +1,8 @@
 const initState = {
     projects: [
-        {id: '1', title: 'Example 1', content: 'Lorem Ipsum'},
-        {id: '2', title: 'Example 2', content: 'Lorem Ipsum'},
-        {id: '3', title: 'Example 3', content: 'Lorem Ipsum'}
+        {id: '1', title: 'Laundry', content: 'Wash dark and red colored clothing.'},
+        {id: '2', title: 'Clean the Kitchen', content: 'Wipe down counters and mop the floor.'},
+        {id: '3', title: 'Buy Groceries', content: 'Milk, eggs, bread, lettuce, tomato, strawberries and bananas.'}
     ]
 }
 
