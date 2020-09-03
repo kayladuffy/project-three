@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createProject } from '../../store/actions/projectActions';
-import TodoItem from '../todo/TodoItem';
-import AddTodo from '../todo/AddTodo';
+//import TodoItem from '../todo/TodoItem';
+//import AddTodo from '../todo/AddTodo';
 //import TodoList from '../todo/TodoList';
 
 
@@ -40,8 +40,6 @@ class CreateProject extends Component {
                         <button className="btn pick lighten-1 z-depth-0">Submit</button>
                     </div>
                 </form>
-
-                <TodoItem />
 
             </div>
         )
