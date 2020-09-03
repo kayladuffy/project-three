@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-;import { createProject } from '../../store/actions/projectActions';
+import { connect } from 'react-redux';
+import { createProject } from '../../store/actions/projectActions';
+import TodoItem from '../todo/TodoItem';
+import AddTodo from '../todo/AddTodo';
+//import TodoList from '../todo/TodoList';
 
 
 class CreateProject extends Component {
@@ -24,19 +27,21 @@ class CreateProject extends Component {
         return (
             <div className="container">
                 <form onSubmit={this.handleSubmit} className="white">
-                    <h5 className="grey-text text-darken-3">Add Project</h5>
+                    <h5 className="grey-text text-darken-3">Add New Todo</h5>
                     <div className="input-field">
-                        <label htmlFor="title">Project Title</label>
+                        <label htmlFor="title">Todo Title</label>
                         <input type="text" id="title" onChange={this.handleChange}/>
                     </div>
                     <div className="input-field">
-                        <label htmlFor="content">Content</label>
+                        <label htmlFor="content">Todo Details</label>
                         <textarea id="content" className="materialize-textarea" onChange={this.handleChange}></textarea>
                     </div>
                     <div className="input-field">
                         <button className="btn pick lighten-1 z-depth-0">Submit</button>
                     </div>
                 </form>
+
+                <TodoItem />
 
             </div>
         )
