@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createProject } from '../../store/actions/projectActions';
-//import TodoItem from '../todo/TodoItem';
-//import AddTodo from '../todo/AddTodo';
-//import TodoList from '../todo/TodoList';
+
 
 
 class CreateProject extends Component {
@@ -20,7 +18,10 @@ class CreateProject extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         //console.log(this.state)
-        this.props.createProject(this.state)
+        this.props.createProject(this.state);
+        this.setState({
+            content: ''
+        })
     }
 
     render() {
@@ -30,7 +31,7 @@ class CreateProject extends Component {
                     <h5 className="grey-text text-darken-3">Add New Todo</h5>
                     <div className="input-field">
                         <label htmlFor="title">Todo Title</label>
-                        <input type="text" id="title" onChange={this.handleChange}/>
+                        <input type="text" id="title" onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
                         <label htmlFor="content">Todo Details</label>

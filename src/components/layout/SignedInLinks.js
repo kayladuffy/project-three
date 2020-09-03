@@ -5,6 +5,7 @@ const SignedInLinks = () => {
   return(
       <ul className="right">
           <li><NavLink to='/create'>Todos</NavLink></li>
+          <li><NavLink to='/create'>Test</NavLink></li>
           <li><NavLink to='/'>Past Todos</NavLink></li>
           <li><NavLink to='/' className='btn btn-floating pink lighten-1'>KD</NavLink></li>
       </ul>   
